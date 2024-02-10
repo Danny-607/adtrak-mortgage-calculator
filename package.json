@@ -1,0 +1,12 @@
+{
+  "name": "adtrak-mortgage-calculator",
+  "version": "1.0.0",
+  "description": "Widget to calculate the amount of money a user would have to pay back when taking out a mortgage with a sleek design and interface. University project for Adtrak",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
