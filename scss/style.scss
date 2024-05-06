@@ -1,5 +1,119 @@
-// $red: red;
+// Make colours into variables and add a hover effect to the button in the form and the button in the modal.
 
-// body{
-//     background-color: $red;
-// }
+form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+    background-image: linear-gradient(to bottom, #09203F, #537895);
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    font-family: 'Roboto', sans-serif;
+  }
+  .form-header{
+    padding: 5px;
+    text-align: center;
+    font-size: 1.4em;
+  }
+  label{
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  input{
+    height: 30px;
+    border-radius: 5px;
+    /* padding: 5px; */
+    margin: 0 5px  10px 5px ;
+    border: none;
+  }
+  .btn{
+    width: 100px;
+    height: 40px;
+    border: solid black 1px;
+    border-radius: 5px;
+    background-color: #E35151;
+    color: white;
+    font-weight: bold;
+    margin: 10px auto;
+    
+  }
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    width: 800px;
+    max-width: 80%;
+    font-family: 'Roboto', sans-serif;
+    // display: none;
+}
+
+.modal-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+#close-btn{
+  margin-left: auto;
+  background: none;
+  border: none;
+}
+
+.modal h2{
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+#overlay{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: (0, 0, 0, 0.5);
+    opacity: 0;
+    position: fixed;
+    pointer-events: none;
+}
+
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-body{
+    padding: 15px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-body p{
+    font-size: 1.1em;
+}
+
+.modal-body button{
+    width: 100px;
+    height: 40px;
+    border: solid black 1px;
+    border-radius: 5px;
+    background-color: #E35151;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #537895;
+}
+
+.hidden{
+    display: none;
+}
