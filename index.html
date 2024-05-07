@@ -9,44 +9,51 @@
     <title>Mortgage Calculator</title>
 </head>
 <body>
-    <form action="" id="mortgageForm">
-        <div class="form-header">
-            <h2>Mortgage Calculator</h2>
-        </div>
-        <label for="principal">Price of the property</label>
-        <input name="principal" type="number" id="principal" required>
-        <label for="downPayment">Down payment</label>
-        <input name="downPayment" type="number" id="downPayment" required>
-        <label for="interestRate">Interest rate</label>
-        <input name="interestRate" type="number" id="interestRate" required>
-        <label for="loanTerm">Loan term in years</label>
-        <input name="loanTerm"type="number" id="loanTerm" required>
-        <label for="userAgreement">Do you allow for your data to be used for this calculation?</label>
-        <input name="userAgreement" type="checkbox" required>
-        <button type="submit" id="submit" class="btn">Calculate</button>
-    </form>
-
-    <section class="modal hidden" id="modal">
-        <div class="modal-header">
-            <h2>Repayment Schedule</h2>
-            <button id="close-btn"><i class="fa-solid fa-square-xmark"></i></button>
-        </div>
-        <div class="modal-body">
-            <canvas id="mortgageChart"></canvas>
-            <div class="modal-buttons">
-                <button id="yearlyButton" class="btn">Yearly</button>
-                <button id="monthlyButton" class="btn">Monthly</button>
+    <body>
+        <!-- Mortgage input form -->
+        <form action="" id="mortgageForm">
+            <div class="form-header">
+                <h2>Mortgage Calculator</h2>
             </div>
-            <div>
-                <p id="month"></p>
-                <p id="year"></p>
-            </div>
-
-        </div>
-    </section>
+            <!-- Input fields for principal, down payment, interest rate, and loan term -->
+            <label for="principal">Price of the property</label>
+            <input name="principal" type="number" id="principal" required>
+            <label for="downPayment">Down payment</label>
+            <input name="downPayment" type="number" id="downPayment" required>
+            <label for="interestRate">Interest rate</label>
+            <input name="interestRate" type="number" id="interestRate" required>
+            <label for="loanTerm">Loan term in years</label>
+            <input name="loanTerm" type="number" id="loanTerm" required>
+            <!-- Checkbox for user agreement -->
+            <label for="userAgreement">Do you allow for your data to be used for this calculation?</label>
+            <input name="userAgreement" type="checkbox" required>
+            <!-- Button to calculate mortgage -->
+            <button type="submit" id="submit" class="btn">Calculate</button>
+        </form>
     
-    <!-- <div class="active" id="overlay"></div> -->
-    <table id="table"></table>
+        <!-- Modal for displaying repayment schedule -->
+        <section class="modal hidden" id="modal">
+            <div class="modal-header">
+                <h2>Repayment Schedule</h2>
+                <!-- Button to close the modal -->
+                <button id="close-btn"><i class="fa-solid fa-square-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <!-- Canvas for displaying the mortgage chart -->
+                <canvas id="mortgageChart"></canvas>
+                <!-- Buttons to switch between yearly and monthly view -->
+                <div class="modal-buttons">
+                    <button id="yearlyButton" class="btn">Yearly</button>
+                    <button id="monthlyButton" class="btn">Monthly</button>
+                </div>
+                <!-- Paragraphs to display monthly and yearly repayment amounts -->
+                <div>
+                    <p id="month"></p>
+                    <p id="year"></p>
+                </div>
+            </div>
+        </section>
+
     <script src="script/script.js"></script>
 </body>
 </html>
