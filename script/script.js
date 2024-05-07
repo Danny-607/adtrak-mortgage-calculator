@@ -6,7 +6,7 @@ var monthlyButton = document.getElementById('monthlyButton');
 var monthlyText = document.getElementById('month')
 var yearlyText = document.getElementById('year')
 
-document.querySelector("form").addEventListener("submit", function (e) {
+document.getElementById("mortgageForm").addEventListener("submit", function (e) {
   e.preventDefault();
   modal.classList.remove('hidden');
 
