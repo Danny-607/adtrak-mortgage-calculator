@@ -28,8 +28,8 @@ document.getElementById("mortgageForm").addEventListener("submit", function (e) 
   monthlyButton.onclick = function () { monthly(total, interestPayment, monthlyPayment, loanTermMonth, loan) };
   yearly(total, loanTerm, interestPayment, loan);
 
-  monthlyText.textContent = `Monthly repayment amount ${monthlyPayment.toFixed(2)}`;
-  yearlyText.textContent = `Yearly repayment amount ${(monthlyPayment * 12).toFixed(2)}`;
+  monthlyText.textContent = `Monthly repayment amount £ ${monthlyPayment.toFixed(2)}`;
+  yearlyText.textContent = `Yearly repayment amount £ ${(monthlyPayment * 12).toFixed(2)}`;
 
 });
 
